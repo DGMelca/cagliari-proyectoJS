@@ -26,9 +26,9 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-secundary" type="submit">
+                    <button class="btn btn-outline-secundary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="carrito">
                         <i class="bi-cart-fill me-1"></i>
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="contador"> </span>
                     </button>
                 </form>
             </nav>
@@ -37,41 +37,25 @@
     <main>
         <H1>Tienda</H1>
         <P>Encontrá todo lo que necesitas en nuestra tienda.</P>
-        <section class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-2 justify-content-center"">
-            <div class="card container py-2" style="width: 18rem;">
-                <div class="card-deck row m-10 p-2">
-                    <img class="card-img-top" src="img/shampoo-solido.jpg" alt="shampoo solido Tenzi" style="width:100%">
-                        <div class="card-body">
-                        <h3 class="card-title">Shampoo Sólido</h3>
-                        <p class="card-text">Aceite esencial de menta, ideal para cabellos grasos</p>
-                        <p class="card-price">$350.00</p>
-                        <a href="#" class="btn btn-secondary">Comprar</a>
+        <section id="galeria" class="row container gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-2 justify-content-center">
+
+        </section>  
+        <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Mi Carrito</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="contCarrito">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Finalizar compra</button>
+                        </div>
                     </div>
+                </div>
             </div>
-            </div>
-            <div class="card container py-2" style="width: 18rem;">
-                <div class="card-deck row m-10 p-2">
-                    <img class="card-img-top" src="img/acondicionador-solido.jpg" alt="acondicionador solido Tenzi" style="width:100%">
-                        <div class="card-body">
-                        <h3 class="card-title">Acondicionador Sólido</h3>
-                        <p class="card-text">Acción desenredante para todo tipo de cabellos</p>
-                        <p class="card-price">$380.00</p>
-                        <a href="#" class="btn btn-secondary">Comprar</a>
-                    </div>
-            </div>
-            </div>
-            <div class="card container py-2" style="width: 18rem;">
-                <div class="card-deck row m-10 p-2">
-                    <img class="card-img-top" src="img/jabon-tocador.jpg" alt="Jabón corporal Tenzi" style="width:100%">
-                        <div class="card-body">
-                        <h3 class="card-title">Jabón corporal</h3>
-                        <p class="card-text">Cremoso y exfoliante, ideal para uso cotidiano</p>
-                        <p class="card-price">$200.00</p>
-                        <a href="#" class="btn btn-secondary">Comprar</a>
-                    </div>
-            </div>
-            </div>
-        </section>
     </main>
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Tenzi - Cosmética natural</p></div>
